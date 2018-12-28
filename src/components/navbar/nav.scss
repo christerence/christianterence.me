@@ -20,6 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
   margin: 0.2vmin;
   flex: 1;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -32,10 +34,13 @@
   transition: color 0.5s ease;
   transition: transform 0.2s ease;
   transition: box-shadow 0.1s ease;
+  transition: background 0.5s ease;
+  border: solid 1px #fff;
 }
 
 .nav-item:hover {
-  color: grey;
+  color: black;
+  background: white;
 }
 
 .nav-item:active {

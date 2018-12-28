@@ -9,15 +9,15 @@ const paths = [
   { name: "portfolio", link: "https://christerence.github.io", external: true}
 ];
 
-const HomeTemplate = () => (
+const HomeTemplate = ({onClickPic}) => (
   <div className="home-container">
-    <div className="Profile">
+    <div className="Profile" onClick={onClickPic}>
       <img
         id="profile-pic"
         src={require("../../assets/images/profilepicture.jpeg")}
       />
     </div>
-    <div style={{marginBottom: '20px'}}>
+    <div style={{marginBottom: '2vmin'}}>
       <h3 className="typewriter" id="name">
         Christian Terence Cabauatan
       </h3>

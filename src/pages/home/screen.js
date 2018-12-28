@@ -6,9 +6,13 @@ export default class Home extends Component {
         super(props);
     }
 
+    onClickPic = () => {
+        window.open('https://www.linkedin.com/in/christianterencecabauatan/')
+    }
+
     render() {
         return (
-            <HomeTemplate />
+            <HomeTemplate onClickPic={this.onClickPic}/>
         )
     }
 }
