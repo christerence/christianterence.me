@@ -1,23 +1,10 @@
-.container {
+.home-container {
   flex: 1;
-  background: black;
-  flex-direction: row;
-}
-
-.left {
-  flex: 1;
+  background: url("../../assets/images/port.jpg") no-repeat;
+  background-size: cover;
   flex-direction: column;
-  background: lighten(#000, 10);
-  border-right: solid 0.1vmin darken(white, 10);
   align-items: center;
-  padding: 5vmin;
-}
-
-.right {
-  flex: 4;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-items: flex-start;
+  justify-content: center;
 }
 
 .Profile {
@@ -64,7 +51,6 @@
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
@@ -74,7 +60,6 @@
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
   to {
