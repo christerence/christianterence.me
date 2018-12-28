@@ -5,9 +5,6 @@ import { NavBar } from "../../components/navbar/nav";
 
 const paths = [
   { name: "home", link: "/", external: false },
-  { name: "github", link: "https://www.github.com/christerence", external: true },
-  { name: "resume", link: "https://drive.google.com/file/d/1FyV1MlR5EYYKT6xG4eQ267afJH2sHOdH/view?usp=sharing", external: true },
-  { name: "portfolio", link: "https://christerence.github.io", external: true}
 ];
 
 
