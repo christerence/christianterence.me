@@ -3,15 +3,16 @@ import "./home.scss";
 import { NavBar } from "../../components/navbar/nav";
 
 const paths = [
-  { name: "about", link: "/about", external: false },
-  { name: "github", link: "https://www.github.com/christerence", external: true },
-  { name: "resume", link: "https://drive.google.com/file/d/1FyV1MlR5EYYKT6xG4eQ267afJH2sHOdH/view?usp=sharing", external: true },
-  { name: "portfolio", link: "https://christerence.github.io", external: true}
+  { name: "ABOUT", link: "/about", external: false },
+  { name: "GITHUB", link: "https://www.github.com/christerence", external: true },
+  { name: "RESUME", link: "https://drive.google.com/file/d/1FyV1MlR5EYYKT6xG4eQ267afJH2sHOdH/view?usp=sharing", external: true },
+  { name: "PORTFOLIO", link: "https://christerence.github.io", external: true},
+  { name: "TERMINAL", link: "/terminal", external: false}
 ];
 
 const HomeTemplate = ({onClickPic}) => (
   <div className="home-container">
-    <div className="Profile" onClick={onClickPic}>
+    <div className="profile" onClick={onClickPic}>
       <img
         id="profile-pic"
         src={require("../../assets/images/profilepicture.jpeg")}

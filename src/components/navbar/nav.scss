@@ -17,25 +17,25 @@
 }
 
 .nav-item {
+  background: rgba(24, 24, 24, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1vmin;
-  padding-bottom: 1vmin;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
   margin: 0.2vmin;
   flex: 1;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 12;
+  font-size: 2vmin;
   text-align: center;
-  color: white;
-  font-weight: 500;
+  color: rgb(243, 243, 243);
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.5s ease;
   transition: transform 0.2s ease;
   transition: box-shadow 0.1s ease;
   transition: background 0.5s ease;
-  border: solid 1px #fff;
 }
 
 .nav-item:hover {

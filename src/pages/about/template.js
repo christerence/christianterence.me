@@ -3,10 +3,7 @@ import "./about.scss";
 
 import { NavBar } from "../../components/navbar/nav";
 
-const paths = [
-  { name: "home", link: "/", external: false },
-];
-
+const paths = [{ name: "home", link: "/", external: false }];
 
 const AboutTemplate = () => (
   <div className="about-container">
@@ -15,10 +12,9 @@ const AboutTemplate = () => (
       <div className="detail-right">
         <h1 className="detail-title">About Me:</h1>
         <div className="detail-body">
-          beep bop beep bop beep bop beep bop beep bop beep bop beep bop beep
-          bop beep bop beep bop beep bop beep bop beep bop beep bop beep bop
-          beep bop beep bop beep bop beep bop beep bop beep bop beep bop beep
-          bop beep bop beep bop beep bop beep bop beep bop beep bop beep bop.
+          My name is Christian Terence Cabauatan. Currently a Junior in Computer
+          Science at Virginia Tech. I am very interested in mobile and web
+          development. I like exploring frameworks and libraries, such as React and NodeJS.
         </div>
       </div>
       <div className="detail-left">
