@@ -1,0 +1,176 @@
+.home {
+  height: 100%;
+  width: 100%;
+  background: rgb(243, 243, 243);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 26fr 2fr;
+  grid-template-areas:
+    "header header header header"
+    "main main main side"
+    "footer footer footer footer";
+}
+
+.header {
+  color: white;
+  grid-area: header;
+  background: rgb(15, 15, 15);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "menu title resume";
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu:active {
+  background: red;
+  color: rgb(24, 24, 24);
+}
+
+.title {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 3vmin;
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  text-shadow: 1px 1px red;
+  letter-spacing: 2vmin;
+}
+
+.resume {
+  grid-area: resume;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-button {
+  font-family: "ABeeZee", sans-serif;
+  border: solid 1px rgb(243, 243, 243);
+  padding: 1vmin;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.resume-button:active {
+  color: rgb(24, 24, 24);
+  background: rgb(243, 243, 243);
+}
+
+.main {
+  grid-area: main;
+  background: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  font-family: "ABeeZee", sans-serif;
+  color: rgb(243, 243, 243);
+  flex: 2;
+  margin: 5vmin;
+  margin-bottom: 0vmin;
+  font-size: 4vmin;
+  margin-top: 15vmin;
+}
+
+.main-body {
+  flex: 8;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "photo description"
+    "projects projects";
+}
+
+.photo {
+  grid-area: photo;
+  background: url("https://media.licdn.com/dms/image/C4E03AQF7gb_p_bWIDQ/profile-displayphoto-shrink_200_200/0?e=1564617600&v=beta&t=tRe1CacATI8uB_oLs7QF1DBwgXxi0gc3MEs6hGCKTi8")
+    center no-repeat;
+  background-size: cover;
+  width: 30vmin;
+  height: 30vmin;
+  border-radius: 100%;
+  margin-left: 10vmin;
+}
+
+.description {
+  grid-area: description;
+  font-family: "ABeeZee", sans-serif;
+  color: white;
+  display: flex;
+  word-spacing: 0.5vmin;
+}
+
+.description p {
+  width: 70%;
+  margin: 5vmin;
+  margin-top: 8vmin;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.side {
+  grid-area: side;
+  background: rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  font-family: "ABeeZee", sans-serif;
+  color: rgb(243, 243, 243);
+}
+
+.side-title {
+  width: 100%;
+  flex: 1;
+  font-size: 2.5vmin;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vmin;
+  text-decoration: underline;
+}
+
+.side-body {
+  width: 100%;
+  flex: 9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill {
+  font-size: 2vmin;
+  width: 70%;
+  margin: 1vmin;
+}
+
+.footer {
+  grid-area: footer;
+  background: rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin: 1vmin;
+}
+
+.icon:active {
+ color: red;
+}
