@@ -123,6 +123,10 @@
 
 .projects {
   grid-area: projects;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side {
@@ -177,6 +181,22 @@
   color: red;
 }
 
+.icon2 {
+  font-size: 5vmin;
+  margin: 15vmin;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3vmin;
+  background: rgb(15, 15, 15);
+  border-radius: 100%;
+  transition: background 0.1s ease-in, color 0.1s ease-in;
+}
+
+.icon2:active {
+  background: white;
+  color: black;
+}
+
 @media screen and (max-width: 800px) {
   .home {
     grid-template-columns: 1fr 1fr;
@@ -202,12 +222,15 @@
     margin-top: 8vmin;
   }
 
+  .projects {
+    display: none;
+  }
 
   .main-body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "photo"
-      "description"
+      "description";
   }
 }

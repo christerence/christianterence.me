@@ -27,16 +27,44 @@ function Home() {
       <div className="main">
         <div className="main-title">About Me:</div>
         <div className="main-body">
-          <div className="photo" />
+          <div
+            className="photo"
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/christianterencecabauatan/"
+              );
+            }}
+          />
           <div className="description">
             <p>
               My name is Christian Terence Cabauatan. Currently a Senior at
               Virginia Tech. I am very interested in mobile and web development.
-              I like exploring frameworks and libraries, such as React and
-              Node.
+              I like exploring frameworks and libraries, such as React and Node.
             </p>
           </div>
-          <div className="projects" />
+          <div className="projects">
+            <div
+              onClick={() => {
+                window.open("https://github.com/christerence/StudentCompanion");
+              }}
+            >
+              <i class="fas fa-star icon2" />
+            </div>
+            <div
+              onClick={() => {
+                window.open("https://github.com/christerence/spotify-playlist");
+              }}
+            >
+              <i class="fas fa-star icon2" />
+            </div>
+            <div
+              onClick={() => {
+                window.open("https://github.com/christerence/Blabber");
+              }}
+            >
+              <i class="fas fa-star icon2" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -49,13 +77,13 @@ function Home() {
           <div className="skill">- C</div>
           <div className="skill">- Kotlin</div>
           <div className="skill">- Node</div>
+          <div className="skill">- Docker</div>
           <div className="skill">- React</div>
           <div className="skill">- React-Native</div>
           <div className="skill">- Mobile Development</div>
           <div className="skill">- Web Development</div>
         </div>
       </div>
-
       <div className="footer">
         <div
           onClick={() => {
