@@ -19,7 +19,7 @@ function Home() {
               );
             }}
           >
-            <i class="fas fa-file" />
+            RESUME
           </div>
         </div>
       </div>
@@ -38,38 +38,42 @@ function Home() {
           <div className="description">
             <p>
               My name is Christian Terence Cabauatan. Currently a Senior at
-              Virginia Tech. I am very interested in mobile and web development.
-              I like exploring frameworks and libraries, such as React and Node.
+              Virginia Tech. I'm looking for a Full-Time Position to utilize
+              skills in Computer Science; Special Interests in Software
+              Development: Mobile and Web.
             </p>
           </div>
           <div className="projects">
             <div
+              className="project-item"
               onClick={() => {
                 window.open("https://github.com/christerence/StudentCompanion");
               }}
             >
-              <i class="fas fa-star icon2" />
+              PROJECT <br /> ONE
             </div>
             <div
+              className="project-item"
               onClick={() => {
                 window.open("https://github.com/christerence/spotify-playlist");
               }}
             >
-              <i class="fas fa-star icon2" />
+              PROJECT <br /> TWO
             </div>
             <div
+              className="project-item"
               onClick={() => {
                 window.open("https://github.com/christerence/Blabber");
               }}
             >
-              <i class="fas fa-star icon2" />
+              PROJECT <br /> THREE
             </div>
           </div>
         </div>
       </div>
 
       <div className="side">
-        <div className="side-title">SKILLS & LANGUAGES</div>
+        <div className="side-title">LANGUAGES & TOOLS</div>
         <div className="side-body">
           <div className="skill">- Java</div>
           <div className="skill">- Javascript</div>

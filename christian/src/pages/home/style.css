@@ -54,15 +54,16 @@
 
 .resume-button {
   font-family: "ABeeZee", sans-serif;
-  border: solid 1px rgb(243, 243, 243);
   padding: 1vmin;
   padding-left: 3vmin;
   padding-right: 3vmin;
   border-radius: 2px;
   cursor: pointer;
+  font-weight: 800;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
 }
 
-.resume-button:active {
+.resume-button:hover {
   color: rgb(24, 24, 24);
   background: rgb(243, 243, 243);
 }
@@ -72,8 +73,8 @@
   background: rgb(24, 24, 24);
   display: flex;
   flex-direction: column;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .main-title {
@@ -175,27 +176,32 @@
 
 .icon {
   margin: 1vmin;
+  font-size: 3vmin;
 }
 
 .icon:active {
   color: red;
 }
 
-.icon2 {
-  font-size: 5vmin;
-  margin: 15vmin;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 3vmin;
+
+
+.project-item  {
+  flex: 1;
+  font-size: 2vmin;
+  font-weight: 900;
+  padding: 2vmin;
+  border-left: solid 1px white;
   background: rgb(15, 15, 15);
-  border-radius: 100%;
+  border-radius: 1px;
+  text-align: center;
   transition: background 0.1s ease-in, color 0.1s ease-in;
 }
 
-.icon2:active {
+.project-item:hover {
   background: white;
   color: black;
 }
+
 
 @media screen and (max-width: 800px) {
   .home {
