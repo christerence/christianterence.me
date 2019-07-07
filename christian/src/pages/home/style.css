@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 26fr 2fr;
   grid-template-areas:
-    "header header header header"
+    "header header header side"
     "main main main side"
     "footer footer footer footer";
 }
@@ -15,10 +15,12 @@
   color: white;
   grid-area: header;
   background: rgb(15, 15, 15);
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "menu title resume";
+  grid-template-areas: "title";
 }
 
 .menu {
@@ -35,35 +37,36 @@
 
 .title {
   font-family: "ABeeZee", sans-serif;
-  font-size: 3vmin;
+  font-size: 30px;
   grid-area: title;
   display: flex;
-  justify-content: center;
+  padding-left: 4vmin;
   align-items: center;
   font-weight: 800;
   text-shadow: 1px 1px red;
   letter-spacing: 2vmin;
 }
 
-.resume {
-  grid-area: resume;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-button {
+.desc-button {
   font-family: "ABeeZee", sans-serif;
-  padding: 1vmin;
-  padding-left: 3vmin;
-  padding-right: 3vmin;
-  border-radius: 2px;
+  background: rgb(15, 15, 15);
+  text-align: center;
   cursor: pointer;
   font-weight: 800;
+  width: 100px;
+  padding: 5px;
+  margin: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
   transition: background 0.2s ease-in, color 0.2s ease-in;
+  -webkit-box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
+  color: white;
 }
 
-.resume-button:hover {
+.desc-button:hover {
   color: rgb(24, 24, 24);
   background: rgb(243, 243, 243);
 }
@@ -73,18 +76,30 @@
   background: rgb(24, 24, 24);
   display: flex;
   flex-direction: column;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 35px -35px 0px -25px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 35px -35px 0px -25px rgba(255, 255, 255, 1);
+  box-shadow: 35px -35px 0px -25px rgba(255, 255, 255, 1);
+  margin: 5px;
+  margin-right: 10px;
+  margin-bottom: 0;
 }
 
 .main-title {
+  flex: 1;
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.main-title p {
+  width: 140px;
+  background: rgb(15, 15, 15);
+  padding: 20px;
   font-family: "ABeeZee", sans-serif;
-  color: rgb(243, 243, 243);
-  flex: 2;
-  margin: 5vmin;
-  margin-bottom: 0vmin;
+  color: white;
   font-size: 4vmin;
-  margin-top: 5vmin;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: solid 1px rgb(243, 243, 243);
 }
 
 .main-body {
@@ -102,10 +117,11 @@
   background: url("https://media.licdn.com/dms/image/C4E03AQF7gb_p_bWIDQ/profile-displayphoto-shrink_200_200/0?e=1564617600&v=beta&t=tRe1CacATI8uB_oLs7QF1DBwgXxi0gc3MEs6hGCKTi8")
     center no-repeat;
   background-size: cover;
-  width: 30vmin;
-  height: 30vmin;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   margin-left: 10vmin;
+  margin-top: 20px;
 }
 
 .description {
@@ -113,13 +129,21 @@
   font-family: "ABeeZee", sans-serif;
   color: white;
   display: flex;
+  flex-direction: column;
   word-spacing: 0.5vmin;
+}
+
+.desc-buttons {
+  display: flex;
+  margin-left: 5vmin;
+  margin-right: 5vmin;
 }
 
 .description p {
   width: 70%;
   margin: 5vmin;
   margin-top: 8vmin;
+  margin-bottom: 20px;
 }
 
 .projects {
@@ -127,7 +151,7 @@
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .side {
@@ -141,21 +165,40 @@
 
 .side-title {
   width: 100%;
-  flex: 1;
   font-size: 2.5vmin;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7vmin;
   text-decoration: underline;
 }
 
 .side-body {
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   flex: 9;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "first"
+    "second";
+}
+
+.side-first-col {
+  margin: 20px;
+  grid-area: first;
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.side-second-col {
+  margin: 20px;
+  grid-area: second;
+  display: flex;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -183,18 +226,23 @@
   color: red;
 }
 
-
-
-.project-item  {
+.project-item {
+  font-family: "ABeeZee", sans-serif;
   flex: 1;
   font-size: 2vmin;
   font-weight: 900;
   padding: 2vmin;
-  border-left: solid 1px white;
+  height: 20px;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
+  margin: 10px;
   background: rgb(15, 15, 15);
-  border-radius: 1px;
   text-align: center;
   transition: background 0.1s ease-in, color 0.1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-item:hover {
@@ -202,8 +250,46 @@
   color: black;
 }
 
+@media screen and (max-width: 1200px) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 26fr 2fr;
+    grid-template-areas:
+      "header header"
+      "main side"
+      "footer footer";
+  }
 
-@media screen and (max-width: 800px) {
+  .main {
+    border-radius: 0px;
+    border: 0;
+  }
+
+  .photo {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+  }
+
+  .description p {
+    width: 80%;
+  }
+
+  .projects {
+    display: none;
+  }
+
+  .main-body {
+    border: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "photo"
+      "description";
+  }
+}
+
+@media screen and (max-width: 768px) {
   .home {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 26fr 2fr;
@@ -214,29 +300,34 @@
       "footer footer";
   }
 
-  .main {
-    border-radius: 0px;
-  }
-
-  .photo {
-    margin: auto;
-  }
-
   .description p {
-    width: 100%;
-    margin: 5vmin;
-    margin-top: 8vmin;
+    width: 80%;
+    text-align: left;
   }
 
-  .projects {
-    display: none;
+  .side {
+    border-top: solid 1px rgba(243, 243, 243, 0.5);
+    border-bottom: solid 1px rgba(243, 243, 243, 0.5);
   }
 
-  .main-body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "photo"
-      "description";
+  .side-title {
+    margin-top: 0;
+  }
+
+  .side-body {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "first second";
+  }
+
+  .side-first-col {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .side-second-col {
+    justify-content: flex-start;
+    align-items: center;
   }
 }

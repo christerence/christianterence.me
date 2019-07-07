@@ -6,26 +6,13 @@ function Home() {
   return (
     <div className="home">
       <div className="header">
-        <div className="menu">
-          <i class="fas fa-bars" />
-        </div>
         <div className="title">Christian Terence</div>
-        <div className="resume">
-          <div
-            className="resume-button"
-            onClick={() => {
-              window.open(
-                "https://drive.google.com/open?id=1AbFNqtFQcjMl1CggIq_RM5ZHCEZqgznc"
-              );
-            }}
-          >
-            RESUME
-          </div>
-        </div>
       </div>
 
       <div className="main">
-        <div className="main-title">About Me:</div>
+        <div className="main-title">
+          <p>About Me:</p>
+        </div>
         <div className="main-body">
           <div
             className="photo"
@@ -42,6 +29,38 @@ function Home() {
               skills in Computer Science; Special Interests in Software
               Development: Mobile and Web.
             </p>
+            <div className="desc-buttons">
+              <div
+                className="desc-button"
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/open?id=1AbFNqtFQcjMl1CggIq_RM5ZHCEZqgznc"
+                  );
+                }}
+              >
+                resume
+              </div>
+
+              <div
+                className="desc-button"
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/christianterencecabauatan/"
+                  );
+                }}
+              >
+                linkedin
+              </div>
+
+              <div
+                className="desc-button"
+                onClick={() => {
+                  window.open("https://github.com/christerence");
+                }}
+              >
+                github
+              </div>
+            </div>
           </div>
           <div className="projects">
             <div
@@ -50,7 +69,7 @@ function Home() {
                 window.open("https://github.com/christerence/StudentCompanion");
               }}
             >
-              PROJECT <br /> ONE
+              Student Companion
             </div>
             <div
               className="project-item"
@@ -58,7 +77,7 @@ function Home() {
                 window.open("https://github.com/christerence/spotify-playlist");
               }}
             >
-              PROJECT <br /> TWO
+              Spotify Playlist
             </div>
             <div
               className="project-item"
@@ -66,28 +85,33 @@ function Home() {
                 window.open("https://github.com/christerence/Blabber");
               }}
             >
-              PROJECT <br /> THREE
+              Blabber
             </div>
           </div>
         </div>
       </div>
 
       <div className="side">
-        <div className="side-title">LANGUAGES & TOOLS</div>
         <div className="side-body">
-          <div className="skill">- Java</div>
-          <div className="skill">- Javascript</div>
-          <div className="skill">- Python</div>
-          <div className="skill">- C</div>
-          <div className="skill">- Kotlin</div>
-          <div className="skill">- Node</div>
-          <div className="skill">- Docker</div>
-          <div className="skill">- React</div>
-          <div className="skill">- React-Native</div>
-          <div className="skill">- Mobile Development</div>
-          <div className="skill">- Web Development</div>
+          <div class="side-first-col">
+            <div className="side-title">LANGUAGES</div>
+            <div className="skill">- Java</div>
+            <div className="skill">- Javascript</div>
+            <div className="skill">- Python</div>
+            <div className="skill">- C</div>
+            <div className="skill">- Kotlin</div>
+          </div>
+          <div className="side-second-col">
+            <div className="side-title">SKILLS & TOOLS</div>
+            <div className="skill">- Node</div>
+            <div className="skill">- Docker</div>
+            <div className="skill">- React & React-Native</div>
+            <div className="skill">- Mobile Development</div>
+            <div className="skill">- Web Development</div>
+          </div>
         </div>
       </div>
+
       <div className="footer">
         <div
           onClick={() => {
