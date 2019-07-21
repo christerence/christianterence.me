@@ -1,0 +1,58 @@
+.description {
+  grid-area: description;
+  font-family: "ABeeZee", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  word-spacing: 0.5vmin;
+}
+
+.desc-buttons {
+  display: flex;
+  margin-left: 5vmin;
+  margin-right: 5vmin;
+}
+
+.description p {
+  width: 70%;
+  margin: 5vmin;
+  margin-top: 8vmin;
+  margin-bottom: 20px;
+}
+
+.desc-button {
+  font-family: "ABeeZee", sans-serif;
+  background: rgb(15, 15, 15);
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+  width: 100px;
+  padding: 5px;
+  margin: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+  -webkit-box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
+  color: white;
+}
+
+.desc-button:hover {
+  color: rgb(24, 24, 24);
+  background: rgb(243, 243, 243);
+}
+
+@media screen and (max-width: 1200px) {
+  .description p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description p {
+    width: 80%;
+    text-align: left;
+  }
+}

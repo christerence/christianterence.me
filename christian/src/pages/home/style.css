@@ -11,66 +11,6 @@
     "footer footer footer footer";
 }
 
-.header {
-  color: white;
-  grid-area: header;
-  background: rgb(15, 15, 15);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "title";
-}
-
-.menu {
-  grid-area: menu;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu:active {
-  background: red;
-  color: rgb(24, 24, 24);
-}
-
-.title {
-  font-family: "ABeeZee", sans-serif;
-  font-size: 30px;
-  grid-area: title;
-  display: flex;
-  padding-left: 4vmin;
-  align-items: center;
-  font-weight: 800;
-  text-shadow: 1px 1px red;
-  letter-spacing: 2vmin;
-}
-
-.desc-button {
-  font-family: "ABeeZee", sans-serif;
-  background: rgb(15, 15, 15);
-  text-align: center;
-  cursor: pointer;
-  font-weight: 800;
-  width: 100px;
-  padding: 5px;
-  margin: 20px;
-  margin-top: 0;
-  margin-left: 0;
-  text-align: center;
-  transition: background 0.2s ease-in, color 0.2s ease-in;
-  -webkit-box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
-  -moz-box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
-  box-shadow: -2px -2px 0px 0px rgba(255, 255, 255, 1);
-  color: white;
-}
-
-.desc-button:hover {
-  color: rgb(24, 24, 24);
-  background: rgb(243, 243, 243);
-}
-
 .main {
   grid-area: main;
   background: rgb(24, 24, 24);
@@ -87,16 +27,17 @@
 .main-title {
   flex: 1;
   margin: 5px;
+  margin-right: 0px;
   margin-left: 0px;
 }
 
 .main-title p {
-  width: 140px;
+  width: 130px;
   background: rgb(15, 15, 15);
-  padding: 20px;
+  padding: 10px;
   font-family: "ABeeZee", sans-serif;
   color: white;
-  font-size: 4vmin;
+  font-size: 26px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-right: solid 1px rgb(243, 243, 243);
@@ -124,131 +65,7 @@
   margin-top: 20px;
 }
 
-.description {
-  grid-area: description;
-  font-family: "ABeeZee", sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  word-spacing: 0.5vmin;
-}
 
-.desc-buttons {
-  display: flex;
-  margin-left: 5vmin;
-  margin-right: 5vmin;
-}
-
-.description p {
-  width: 70%;
-  margin: 5vmin;
-  margin-top: 8vmin;
-  margin-bottom: 20px;
-}
-
-.projects {
-  grid-area: projects;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.side {
-  grid-area: side;
-  background: rgb(15, 15, 15);
-  display: flex;
-  flex-direction: column;
-  font-family: "ABeeZee", sans-serif;
-  color: rgb(243, 243, 243);
-}
-
-.side-title {
-  width: 100%;
-  font-size: 2.5vmin;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: underline;
-}
-
-.side-body {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 100%;
-  flex: 9;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "first"
-    "second";
-}
-
-.side-first-col {
-  margin: 20px;
-  grid-area: first;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.side-second-col {
-  margin: 20px;
-  grid-area: second;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.skill {
-  font-size: 2vmin;
-  width: 70%;
-  margin: 1vmin;
-}
-
-.footer {
-  grid-area: footer;
-  background: rgb(15, 15, 15);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
-  margin: 1vmin;
-  font-size: 3vmin;
-}
-
-.icon:active {
-  color: red;
-}
-
-.project-item {
-  font-family: "ABeeZee", sans-serif;
-  flex: 1;
-  font-size: 2vmin;
-  font-weight: 900;
-  padding: 2vmin;
-  height: 20px;
-  -webkit-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
-  -moz-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
-  box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1);
-  margin: 10px;
-  background: rgb(15, 15, 15);
-  text-align: center;
-  transition: background 0.1s ease-in, color 0.1s ease-in;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-item:hover {
-  background: white;
-  color: black;
-}
 
 @media screen and (max-width: 1200px) {
   .home {
@@ -271,14 +88,6 @@
     width: 200px;
   }
 
-  .description p {
-    width: 80%;
-  }
-
-  .projects {
-    display: none;
-  }
-
   .main-body {
     border: 0;
     grid-template-columns: 1fr;
@@ -298,36 +107,5 @@
       "main main"
       "side side"
       "footer footer";
-  }
-
-  .description p {
-    width: 80%;
-    text-align: left;
-  }
-
-  .side {
-    border-top: solid 1px rgba(243, 243, 243, 0.5);
-    border-bottom: solid 1px rgba(243, 243, 243, 0.5);
-  }
-
-  .side-title {
-    margin-top: 0;
-  }
-
-  .side-body {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "first second";
-  }
-
-  .side-first-col {
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .side-second-col {
-    justify-content: flex-start;
-    align-items: center;
   }
 }

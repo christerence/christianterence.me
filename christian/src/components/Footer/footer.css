@@ -1,0 +1,17 @@
+.footer {
+  grid-area: footer;
+  background: rgb(15, 15, 15);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin: 1vmin;
+  font-size: 3vmin;
+}
+
+.icon:active {
+  color: red;
+}

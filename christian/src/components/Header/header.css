@@ -1,0 +1,23 @@
+.header {
+  color: white;
+  grid-area: header;
+  background: rgb(15, 15, 15);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title";
+}
+
+.title {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 30px;
+  grid-area: title;
+  display: flex;
+  padding-left: 4vmin;
+  align-items: center;
+  font-weight: 800;
+  text-shadow: 1px 1px red;
+  letter-spacing: 2vmin;
+}
