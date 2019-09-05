@@ -10,7 +10,7 @@ const Description = ({ desc }) => {
           className="desc-button"
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1ZpRCOBJ3YaDPDgwDGH5MAfuy_MLIQYXX/view?usp=sharing"
+              "https://drive.google.com/file/d/1Tyj5LbtSDuC82qcPVzgTLhf12_U3ePAf/view?usp=sharing"
             );
           }}
         >
