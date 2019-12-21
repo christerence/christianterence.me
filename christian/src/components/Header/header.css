@@ -1,23 +1,39 @@
 .header {
-  color: white;
   grid-area: header;
-  background: rgb(15, 15, 15);
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 9fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "title";
+  grid-template-areas: "title resume";
+  margin: 10px;
 }
 
 .title {
+  grid-area: title;
   font-family: "ABeeZee", sans-serif;
   font-size: 30px;
-  grid-area: title;
   display: flex;
-  padding-left: 4vmin;
-  align-items: center;
+  padding-left: 10px;
+  margin: 5px;
+  align-items: flex-end;
   font-weight: 800;
-  text-shadow: 1px 1px red;
-  letter-spacing: 2vmin;
+  letter-spacing: 2px;
+}
+
+.resume {
+  grid-area: resume;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.resume:hover {
+  background: black;
+  color: white;
 }

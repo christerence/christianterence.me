@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-const Footer = () => {
+const Footer = ({ openSnap, snap }) => {
   return (
     <div className="footer">
       <div
@@ -9,7 +9,7 @@ const Footer = () => {
           window.open("https://www.linkedin.com/in/christianterencecabauatan/");
         }}
       >
-        <i class="fab fa-linkedin icon" />
+        <i className="fab fa-linkedin icon" />
       </div>
 
       <div
@@ -17,21 +17,27 @@ const Footer = () => {
           window.open("https://github.com/christerence");
         }}
       >
-        <i class="fab fa-github icon" />
+        <i className="fab fa-github icon" />
       </div>
       <div
         onClick={() => {
           window.open("https://christerence.github.io");
         }}
       >
-        <i class="fas fa-folder-open icon" />
+        <i className="fas fa-folder-open icon" />
       </div>
-      <div
-        onClick={() => {
-          alert("add me: christiantcab");
-        }}
-      >
-        <i class="fab fa-snapchat-square icon" />
+      <div onClick={openSnap}>
+        <i className="fab fa-snapchat-square icon" />
+        {snap && (
+          <div className="snap-modal">
+            <div className="snap-content">
+              <div className="snap-text">
+                <i className="fab fa-snapchat-square" /> christiantcab
+              </div>
+              <span className="close">close</span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
