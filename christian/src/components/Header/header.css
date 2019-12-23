@@ -37,3 +37,11 @@
   background: black;
   color: white;
 }
+
+@media screen and (max-width: 896px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title" "resume";
+  }
+}
