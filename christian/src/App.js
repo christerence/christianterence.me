@@ -1,18 +1,17 @@
-import React from "react";
-import { Router, Route } from "react-router-dom";
-import { Home } from './pages';
-import history from "./history";
+import React, { useState } from "react";
+import "./App.css";
+import { Home, About } from "./pages";
+import { BrowserRouter, Route } from "react-router-dom";
+import { NavBar } from "./components";
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router history={history}>
-        <React.Fragment>
-          <Route path="/" exact component={Home} />
-        </React.Fragment>
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Route path="/" exact component={Home} />
+      <Route path="/about" exact component={About} />
+    </BrowserRouter>
+  );
 }
 
 export default App;
